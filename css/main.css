@@ -6,12 +6,26 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-.banner {
+.img-flex {
   position: relative;
+  max-height: 500px;
 }
 
 .banner-content {
+  font-family: "Open Sans", sans-serif;
   padding: 0 1rem;
   position: absolute;
   bottom: 1rem;
+  max-width: 50em;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+p {
+  font-size: 2rem;
+  font-style: italic;
 }
