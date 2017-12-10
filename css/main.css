@@ -1,31 +1,62 @@
 html {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
-.img-flex {
-  position: relative;
-  max-height: 500px;
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.banner-content {
-  font-family: "Open Sans", sans-serif;
-  padding: 0 1rem;
-  position: absolute;
-  bottom: 1rem;
-  max-width: 50em;
+.img-flex {
+  display: block;
+  width: 100%;
+  padding-top: 0;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+  text-align: left;
+  margin: 0;
 }
 
 h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   font-size: 4rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5)
+  background-color: rgba(0, 0, 0, .5);
+  display: inline;
+  text-align: left;
+  line-height: 1.4;
+  position: relative;
+  left: 5px;
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   font-style: italic;
+  text-align: left;
+  margin-top: 8px;
+  position: relative;
+  top: 12px;
+}
+
+.banner-content {
+  padding: 0 1rem;
+  max-width: 50em;
+  overflow: hidden;
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 15px;
 }
